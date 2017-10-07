@@ -1,1 +1,2 @@
-print ("eric mwenda")
+name="eric mwenda"
+print (name) 
