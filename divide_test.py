@@ -9,6 +9,9 @@ class test_divide(unittest.TestCase):
 		self.assertRaises(TypeError, divide(9,'a'))
 		self.assertRaises(TypeError, divide('b','a'))
 	def test_not_divisible_by_zero(self):
-		self.assertRaises(ZeroDivisionError, divide(9,0))
+		try:
+			divide(9,0)
+		except ZeroDivisionError:
+			self.fail(ZeroDivisionError)
 if __name__ == "__main__":
 	unittest.main()
