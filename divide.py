@@ -1,11 +1,8 @@
 def divide(a,b):
+	"""divide two numbers"""
 	try:
-		if b > 0:
-			return a/b
+		return a/b
 	except ZeroDivisionError:
-		return "not divisible by Zero"
+		return "(:- what did you do? you Can't divide by zero"
 	except TypeError:
 		return " :-) only number"
-print divide(9,0)
-print divide(9,3)
-print divide(9,'a')

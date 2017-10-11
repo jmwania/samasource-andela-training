@@ -5,8 +5,8 @@ class testsum(unittest.TestCase):
 	def test_sum(self):
 		self.assertEqual(sum(5,4),9)
 
-	def test_string(self):
-		self.assertNotEqual(sum(5,'we'), '5we')
-
+	def test_is_not_string(self):
+		self.assertRaises(TypeError, sum(5,'we'))
+		
 if __name__ == '__main__':
 	unittest.main()
